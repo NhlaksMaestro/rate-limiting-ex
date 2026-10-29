@@ -130,8 +130,6 @@ async def concurrency_check():
             detail="Maximum concurrent requests reached.",
         )
 
-    # This check-and-acquire sequence is not atomic.
-    # Use the safer implementation below instead.
 
 
 @app.get("/concurrency")
